@@ -1,0 +1,57 @@
+[submodule "bundle/csv.vim"]
+	path = bundle/csv.vim
+	url = https://github.com/chrisbra/csv.vim
+[submodule "bundle/pydoc.vim"]
+	path = bundle/pydoc.vim
+	url = https://github.com/fs111/pydoc.vim.git
+[submodule "bundle/ropevim"]
+	path = bundle/ropevim
+	url = https://github.com/python-rope/ropevim.git
+[submodule "bundle/slimux"]
+	path = bundle/slimux
+	url = https://github.com/epeli/slimux.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
+[submodule "bundle/vim-abolish"]
+	path = bundle/vim-abolish
+	url = https://github.com/tpope/vim-abolish
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "bundle/vim-airline-themes"]
+	path = bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "bundle/vim-autopep8"]
+	path = bundle/vim-autopep8
+	url = https://github.com/tell-k/vim-autopep8.git
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "bundle/vim-game-code-break"]
+	path = bundle/vim-game-code-break
+	url = https://github.com/johngrib/vim-game-code-break.git
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = https://github.com/leshill/vim-json
+[submodule "bundle/vim-pydocstring"]
+	path = bundle/vim-pydocstring
+	url = https://github.com/heavenshell/vim-pydocstring.git
+[submodule "bundle/vim-rhubarb"]
+	path = bundle/vim-rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git
+[submodule "bundle/vim-sensible"]
+	path = bundle/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/vim-tmux-navigator"]
+	path = bundle/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
+[submodule "bundle/vim-unstack"]
+	path = bundle/vim-unstack
+	url = https://github.com/mattboehm/vim-unstack.git
