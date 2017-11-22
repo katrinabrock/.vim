@@ -39,6 +39,7 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_perl_checker = 1
 let g:syntastic_yaml_checkers = ['yamllint']
+let g:syntastic_python_flake8_args='--ignore=E501,W503'
 
 
 "Fix vim.csv highlighting
@@ -67,4 +68,4 @@ if 'VIRTUAL_ENV' in os.environ:
   execfile(activate_this, dict(__file__=activate_this))
 EOF
 
-colorscheme delek
+colorscheme dracula

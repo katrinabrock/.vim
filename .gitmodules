@@ -55,3 +55,6 @@
 [submodule "bundle/vim-unstack"]
 	path = bundle/vim-unstack
 	url = https://github.com/mattboehm/vim-unstack.git
+[submodule "bundle/dracula-theme"]
+	path = bundle/dracula-theme
+	url = git@github.com:dracula/vim.git
