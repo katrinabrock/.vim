@@ -5,6 +5,7 @@ syntax on
 set relativenumber
 set number 
 set tabstop=4 shiftwidth=4 expandtab
+autocmd BufNewFile,BufRead *.html.j2 set syntax=html
 autocmd Filetype html setlocal smartindent
 set softtabstop=4
 autocmd FileType c,cpp,java,php,python autocmd BufWritePre <buffer> %s/\s\+$//e
@@ -16,18 +17,7 @@ nmap <silent> <C-m> <Plug>(pydocstring)
 
 let g:pydoc_cmd = 'python -m pydoc' 
 
-"Slimux configs
-map <Leader>l :SlimuxREPLSendLine<CR>
-vmap <Leader>l :SlimuxREPLSendSelection<CR>`>
-map <Leader>d :SlimuxREPLSendLine<CR>j
-vmap <Leader>d :SlimuxREPLSendSelection<CR>`>j
-map <Leader>a :SlimuxShellLast<CR>
-map <Leader>s :SlimuxShellPrompt<CR>
-map <Leader>c :SlimuxSendKeysPrompt<CR>
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+let g:slime_target = "tmux"
 
 "vim-unstack shortcut
 let g:unstack_mapkey='<Leader>t'
@@ -39,7 +29,8 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_perl_checker = 1
 let g:syntastic_yaml_checkers = ['yamllint']
-let g:syntastic_python_flake8_args='--ignore=E501,W503'
+let g:syntastic_python_checkers=['pylint']
+"let g:syntastic_python_flake8_args='--ignore=E501,W503'
 
 
 "Fix vim.csv highlighting
