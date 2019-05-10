@@ -30,6 +30,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_perl_checker = 1
 let g:syntastic_yaml_checkers = ['yamllint']
 let g:syntastic_python_checkers=['pylint']
+let g:syntastic_puppet_checkers=['puppetlint']
 "let g:syntastic_python_flake8_args='--ignore=E501,W503'
 
 
