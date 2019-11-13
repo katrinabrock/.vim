@@ -4,13 +4,12 @@ filetype plugin indent on
 syntax on
 set relativenumber
 set number 
-set tabstop=4 shiftwidth=4 expandtab
+
+set softtabstop=4 tabstop=4 shiftwidth=4 expandtab
+autocmd Filetype yaml,groovy set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
 autocmd BufNewFile,BufRead *.html.j2 set syntax=html
 autocmd Filetype html setlocal smartindent
-set softtabstop=4
 autocmd FileType c,cpp,java,php,python autocmd BufWritePre <buffer> %s/\s\+$//e
-
-autocmd FileType python call system('tmux resize-pane -x 84')
 
 "Map pydocstring to <C-m>
 nmap <silent> <C-m> <Plug>(pydocstring)
@@ -31,6 +30,8 @@ let g:syntastic_enable_perl_checker = 1
 let g:syntastic_yaml_checkers = ['yamllint']
 let g:syntastic_python_checkers=['pylint']
 let g:syntastic_puppet_checkers=['puppetlint']
+"let g:syntastic_r_checkers=['lintr']
+"let g:syntastic_enable_r_lintr_checker = 1
 "let g:syntastic_python_flake8_args='--ignore=E501,W503'
 
 
@@ -47,9 +48,6 @@ nmap gl :bnext<CR>
 " Move to the previous buffer
 nmap gh :bprevious<CR>
 
-" Set remote for :Gbrowse
-let g:github_enterprise_urls = ['https://github.mv.usa.alcatel.com']
-
 "python with virtualenv support
 py << EOF
 import os
@@ -61,3 +59,6 @@ if 'VIRTUAL_ENV' in os.environ:
 EOF
 
 colorscheme dracula
+
+" :W -> :w
+cnoreabbrev W w
