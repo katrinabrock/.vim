@@ -6,7 +6,8 @@ set relativenumber
 set number 
 
 set softtabstop=4 tabstop=4 shiftwidth=4 expandtab
-autocmd Filetype yaml,groovy set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype yaml,groovy,r,sql setlocal softtabstop=2 tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype yaml setlocal foldmethod=indent
 autocmd BufNewFile,BufRead *.html.j2 set syntax=html
 autocmd Filetype html setlocal smartindent
 autocmd FileType c,cpp,java,php,python autocmd BufWritePre <buffer> %s/\s\+$//e
@@ -16,7 +17,12 @@ nmap <silent> <C-m> <Plug>(pydocstring)
 
 let g:pydoc_cmd = 'python -m pydoc' 
 
+"vim-slime
 let g:slime_target = "tmux"
+smap <c-c><c-c> <Plug>SlimeSendCurrentLine
+nmap <c-c><c-c> <Plug>SlimeLineSend
+
+
 
 "vim-unstack shortcut
 let g:unstack_mapkey='<Leader>t'
